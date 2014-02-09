@@ -1,0 +1,39 @@
+<?php
+/**
+ * @file
+ */
+
+/**
+ * Implements hook_install().
+ */
+function features101_defaults_install() {
+  // Create content types.
+  $content_types = array(
+    'gallery' => array(
+      'name' => t('Gallery'),
+      'base' => 'node_content',
+      'description' => '',
+      'help' => '',
+      'custom' => TRUE,
+      'has_title' => '1',
+      'title_label' => t('Title'),
+    ),
+    'image' => array(
+      'name' => t('Image'),
+      'base' => 'node_content',
+      'help' => '',
+      'description' => '',
+      'custom' => TRUE,
+      'has_title' => '1',
+      'title_label' => t('Title'),
+    ),
+  );
+  foreach ($content_types as $type => $content_type) {
+    $info = (object) $content_type;
+    $info->type = $type;
+    node_type_save($info);
+  }
+
+  // Rebuild all defaul configuration.
+  defaultconfig_rebuild_all();
+}

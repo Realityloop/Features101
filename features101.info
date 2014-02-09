@@ -1,0 +1,38 @@
+name = Features 101
+description = Install profile for Features 101 demonstration.
+version = 7.x-1.0
+core = 7.x
+exclusive = 1
+
+
+
+; Dependencies
+
+dependencies[] = adminimal_admin_menu
+dependencies[] = block
+dependencies[] = coffee
+dependencies[] = comment
+dependencies[] = context_ui
+dependencies[] = contextual
+dependencies[] = devel_generate
+dependencies[] = diff
+dependencies[] = entityreference
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = help
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = module_filter
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = rdf
+dependencies[] = taxonomy
+dependencies[] = views_ui
+
+
+
+; Profiler - Variables
+
+variables[site_name] = Features 101

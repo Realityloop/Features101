@@ -1,0 +1,25 @@
+name = Features 101 - Default config
+description = Default config for the Features 101 presentation
+core = 7.x
+package = " Features 101"
+version = 7.x-1.0
+project = features101_defaults
+hidden = 1
+
+
+; Dependencies
+
+dependencies[] = defaultconfig
+
+
+
+; Features
+
+features[defaultconfig][] = context_default_contexts:gallery
+features[defaultconfig][] = field_default_fields:node-gallery-body
+features[defaultconfig][] = field_default_fields:node-image-body
+features[defaultconfig][] = field_default_fields:node-image-field_gallery
+features[defaultconfig][] = field_default_fields:node-image-field_image
+features[defaultconfig][] = views_default_views:gallery
+
+features[features_api][] = api:2
