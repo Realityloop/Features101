@@ -34,6 +34,6 @@ function features101_defaults_install() {
     node_type_save($info);
   }
 
-  // Rebuild all defaul configuration.
+  // Rebuild all default configuration.
   defaultconfig_rebuild_all();
 }

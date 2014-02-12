@@ -59,9 +59,21 @@ projects[module_filter][type] = module
 projects[module_filter][subdir] = contrib
 projects[module_filter][version] = 2.0-alpha2
 
+projects[strongarm][type] = module
+projects[strongarm][subdir] = contrib
+projects[strongarm][version] = 2.0
+
 projects[views][type] = module
 projects[views][subdir] = contrib
 projects[views][version] = 3.7
+
+
+
+; Themes
+
+projects[marinelli][type] = theme
+projects[marinelli][subdir] = contrib
+projects[marinelli][version] = 3.0-beta11
 
 
 

@@ -19,6 +19,7 @@ dependencies[] = diff
 dependencies[] = entityreference
 dependencies[] = field_ui
 dependencies[] = file
+dependencies[] = features101_core
 dependencies[] = help
 dependencies[] = image
 dependencies[] = list

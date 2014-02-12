@@ -1,0 +1,6 @@
+name = Features 101 - Core
+description = Core module for the Features 101 presentation
+core = 7.x
+package = " Features 101"
+version = 7.x-1.0
+project = features101_core
