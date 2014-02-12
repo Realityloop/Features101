@@ -3,3 +3,26 @@
  * @file
  * Install functons for the Features 101 - Core module.
  */
+
+/**
+ * Install and revert the Features 101 feature.
+ */
+function features101_core_update_7100() {
+  // Enable the Features 101 feature.
+  module_enable(array('features101_feature'));
+
+  // Force reset features caches.
+  $info = system_get_info('module', 'features101_feature');
+  module_load_include('inc', 'features', 'features.export');
+  foreach (array_keys($info['features']) as $component) {
+    features_get_components($component, NULL, TRUE);
+    features_include_defaults($component, TRUE);
+    features_get_default($component, 'features101_feature', TRUE, TRUE);
+  }
+
+  // Flush all drupal caches.
+  drupal_flush_all_caches();
+
+  // Revert all features.
+  features_revert();
+}

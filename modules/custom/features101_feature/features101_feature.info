@@ -14,6 +14,7 @@ dependencies[] = entityreference
 dependencies[] = features
 dependencies[] = image
 dependencies[] = options
+dependencies[] = strongarm
 dependencies[] = text
 dependencies[] = views
 
@@ -24,6 +25,7 @@ dependencies[] = views
 features[context][] = gallery
 
 features[ctools][] = context:context:3
+features[ctools][] = strongarm:strongarm:1
 features[ctools][] = views:views_default:3.0
 
 features[features_api][] = api:2
@@ -37,8 +39,26 @@ features[field_instance][] = node-image-body
 features[field_instance][] = node-image-field_gallery
 features[field_instance][] = node-image-field_image
 
+features[image][] = banner
+features[image][] = small
+
 features[node][] = gallery
 features[node][] = image
+
+features[variable][] = comment_anonymous_image
+features[variable][] = comment_default_mode_image
+features[variable][] = comment_default_per_page_image
+features[variable][] = comment_form_location_image
+features[variable][] = comment_image
+features[variable][] = comment_preview_image
+features[variable][] = comment_subject_field_image
+features[variable][] = menu_options_image
+features[variable][] = menu_parent_image
+features[variable][] = node_options_image
+features[variable][] = node_preview_image
+features[variable][] = node_submitted_image
+features[variable][] = theme_default
+features[variable][] = theme_marinelli_settings
 
 features[views_view][] = gallery
 

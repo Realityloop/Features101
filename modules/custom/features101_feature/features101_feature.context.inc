@@ -29,6 +29,12 @@ function features101_feature_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'views-gallery-block_1' => array(
+          'module' => 'views',
+          'delta' => 'gallery-block_1',
+          'region' => 'advertise',
+          'weight' => '-10',
+        ),
         'views-gallery-block' => array(
           'module' => 'views',
           'delta' => 'gallery-block',
